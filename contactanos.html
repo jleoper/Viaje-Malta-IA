@@ -57,17 +57,18 @@
 </style>
 </head>
 <body>
-  <div class="dropdown-content">
-    <form action="#" method="post">
-      <label for="nombre">Nombre completo:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br>
-      <label for="email">Correo electrónico:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="telefono">Número de teléfono:</label><br>
-      <input id="telefono" name="telefono"  required><br><br>
-      <input type="submit" value="Enviar">
-    </form>
+ <form action="index.html" method="post">
+  <button type="submit">Formulario</button>
+  <div>
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="telefono">Número de teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br><br>
+    <p id="gracias" style="display: none;">Muchas gracias. Nos pondremos en contacto con usted lo antes posible.</p>
   </div>
+</form>
 
 
         </section>
