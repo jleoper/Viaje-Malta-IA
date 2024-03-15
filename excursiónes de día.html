@@ -11,31 +11,47 @@
 
     <body>
 
-        <header>
 
-            <nav>
+            header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
 
-                <ul>
-
-                    <li><a href="https://jleoper.github.io/Viaje-Malta-IA/index.html">Inicio</a> </li>
-
-                    <li><a href="conociendo  malta.html">Conociendo Malta</a> </li>
-
-                    <li><a href="vuelos y hoteles.html">Vuelos y hoteles</a> </li>
-
-                    <li><a href="equipajes.html">Equipaje</a> </li>
-
-                    <li><a href="excursiónes de día.html">Actividades de día</a> </li>
-
-                    <li><a href="actividades de noche.html">Actividades de noche</a> </li>
-
-                    <li><a href="contactanos.html">Contacto</a> </li>
-
-                </ul>
-
-            </nav>
-
-        </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="https://jleoper.github.io/Viaje-Malta-IA/index.html">Inicio</a> </li>
+            <li><a href="conociendo malta.html">Conociendo Malta</a> </li>
+            <li><a href="vuelos y hoteles.html">Vuelos y hoteles</a> </li>
+            <li><a href="equipajes.html">Equipaje</a> </li>
+            <li><a href="excursiónes de día.html">Actividades de día</a> </li>
+            <li><a href="actividades de noche.html">Actividades de noche</a> </li>
+            <li><a href="contactanos.html">Contacto</a> </li>
+        </ul>
+    </nav>
+</header>
 
         <section class="wrapper">
 
@@ -72,78 +88,7 @@
             <img src="https://ideogram.ai/api/images/direct/AssxjlT1SPGnbavfW64vFA.jpg" alt="Splash and Fun Waterpark" height="240">
              <img src="https://ideogram.ai/api/images/direct/Ji1WZWsmTeO4rnMhh-iDwQ.jpg" alt="Chicos con vino" height="240">
         </p>
-<style>
-  .carousel-container {
-    width: 20%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .carousel {
-    display: inline-block;
-    white-space: nowrap;
-    transition: transform 0.5s ease;
-  }
-  .carousel figure {
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    display: inline-block;
-    margin-right: 10px; /* Espacio entre imágenes */
-    vertical-align: top;
-  }
-  .carousel img {
-    width: 20%;
-    height: auto;
-  }
-</style>
-</head>
-<body>
 
-<div class="carousel-container">
-  <div class="carousel">
-    <figure>
-      <img src="https://ideogram.ai/api/images/direct/XH46btRBSkmEMV2qaAJizQ.jpg" alt="jovenes haciendo snorkell" height="240">
-    </figure>
-    <figure>
-      <img src="https://cdn.stability.ai/assets/org-h47nSJVvlYIVi1fTgQ5RW87N/00000000-0000-0000-0000-000000000000/5e87c092-d174-43d6-bd13-a09f8fd63235" alt="bar en la playa de Malta" height="240">
-    </figure>
-    <figure>
-      <img src="https://ideogram.ai/api/images/direct/Wkv3UeI9S6GcH1_NaUoy_g.jpg" alt="jovenes en la playa" height="240">
-    </figure>
-    <figure>
-      <img src="https://ideogram.ai/api/images/direct/AssxjlT1SPGnbavfW64vFA.jpg" alt="Splash and Fun Waterpark" height="240">
-    </figure>
-    <figure>
-      <img src="https://ideogram.ai/api/images/direct/Ji1WZWsmTeO4rnMhh-iDwQ.jpg" alt="Chicos con vino" height="240">
-    </figure>
-  </div>
-</div>
-
-<script>
-  let carousel = document.querySelector('.carousel');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  carousel.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-  });
-  carousel.addEventListener('mouseleave', () => {
-    isDown = false;
-  });
-  carousel.addEventListener('mouseup', () => {
-    isDown = false;
-  });
-  carousel.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 3; // Velocidad del desplazamiento
-    carousel.scrollLeft = scrollLeft - walk;
-  });
-</script>
         </section>
 
         <hr>
