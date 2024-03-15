@@ -53,6 +53,53 @@
                 <b>Correo Electrónico: maltaexperienceSL@gmail.com</b>
 
             </p>
+            .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+
+  #gracias {
+    display: none;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Formulario</button>
+  <div class="dropdown-content">
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="telefono">Número de teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br><br>
+      <input type="submit" value="Enviar">
+    </form>
+    <p id="gracias">Muchas gracias. Nos pondremos en contacto con usted lo antes posible.</p>
+  </div>
+</div>
+
 
         </section>
 
