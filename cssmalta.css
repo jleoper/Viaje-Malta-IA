@@ -1,8 +1,10 @@
 h1{color:darkblue;}
-body {background: href= "https://previews.123rf.com/images/saney/saney1702/saney170200199/72007443-patr%C3%B3n-azul-y-blanco-l%C3%ADnea-de-fondo-geom%C3%A9trico-textura-elegante-moderno-vector.jpg";
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;}
+body {background: url(https://previews.123rf.com/images/saney/saney1702/saney170200199/72007443-patr%C3%B3n-azul-y-blanco-l%C3%ADnea-de-fondo-geom%C3%A9trico-textura-elegante-moderno-vector.jpg
+);
+color: black;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;}
 h1 {font-size: 20px;
 padding-left: 40%;}
 * {font-size: 15px;}
